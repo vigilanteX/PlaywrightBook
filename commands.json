@@ -1,4 +1,6 @@
 {
     "single file from test folder":"npx playwright test demo.spec.js",
-    "run all files from test folder":"npx playwright test"
+    "run all files from test folder":"npx playwright test",
+    "run in headed mode":"npx playwright test demo.spec.js --headed",
+    "run script in ui mode and managing and running scripts":"npx playwright test demo.spec.js --ui"
 }
