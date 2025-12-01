@@ -36,9 +36,13 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
-    }
+      name: 'mob chrome',
+      use: { ...devices['Pixel 5'] },
+    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // }
     
 
     /* Test against mobile viewports. */
