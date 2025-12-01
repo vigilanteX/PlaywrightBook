@@ -1,0 +1,4 @@
+{
+    "single file from test folder":"npx playwright test demo.spec.js",
+    "run all files from test folder":"npx playwright test"
+}
