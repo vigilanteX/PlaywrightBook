@@ -8,7 +8,7 @@ test('demo4 test', async ({page}) => {
     //case1: get by role with exact match will select the exact matching element
      await page.getByRole('button',{name:'Get Sum',exact:true});
     //case2: get by role without exact match will select all matching elements matching the name partially
-     await page.getByRole('button',{name:'Get Sum',exact:true});
+     await page.getByRole('button',{name:'Get Sum'});
 
     
      //getByText with exact match vs without exact match
