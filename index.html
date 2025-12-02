@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <button>Get Sum</button>
     <button>Get Sum many</button>
+    <div class="card">
+      <h3>Aman</h3>
+      <button id="btnprim">Edit</button>
+    </div>
 
-    
-</body>
+    <div class="card">
+      <h3>Rohit</h3>
+      <button>Edit</button>
+    </div>
+    <script defer>
+        const bt=document.getElementById('btnprim').addEventListener('click',function(){
+            alert('Button clicked for Aman');
+        });
+    </script>
+  </body>
 </html>
