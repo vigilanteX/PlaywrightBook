@@ -24,6 +24,14 @@ test('demo4 test', async ({page}) => {
     // await page.goto('https://naveenautomationlabs.com/opencart/index.php?route=account/login')
     // await page.getByLabel('E-Mail Address').fill('bobatea')
     // await page.waitForTimeout(2000);
+
+
+
+
+    //getByPlaceholder will search with placeholder attribute value of input field
+    await page.goto('https://naveenautomationlabs.com/opencart/index.php?route=account/login')
+    await page.getByPlaceholder('E-Mail Address').fill('bobatea')
+    await page.waitForTimeout(2000);
      
 
 })
