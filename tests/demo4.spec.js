@@ -26,12 +26,31 @@ test('demo4 test', async ({page}) => {
     // await page.waitForTimeout(2000);
 
 
-
-
     //getByPlaceholder will search with placeholder attribute value of input field
+    // await page.goto('https://naveenautomationlabs.com/opencart/index.php?route=account/login')
+    // await page.getByPlaceholder('E-Mail Address').fill('bobatea')
+    // await page.waitForTimeout(2000);
+
+    //getByAltText will search with alt attribute value of img
+    // await page.goto('https://naveenautomationlabs.com/opencart/index.php?route=account/login')
+    // await page.getByAltText('naveenopencart').click()
+    // await page.waitForTimeout(2000);
+
+    //getByTitle will search with title attribute value of any element
+    // await page.goto('https://naveenautomationlabs.com/opencart/index.php?route=account/login')
+    // await page.getByTitle('naveenopencart').click()
+    // await page.waitForTimeout(2000);
+
+    //getByTestId will search with data-testid attribute value of any element
+    //by default testIdAttribute is data-testid but we have changed it to id in config file
+    //to change got to playwright.config.js and modify testIdAttribute value to required attribute name
+    //in this case we have changed it to id
     await page.goto('https://naveenautomationlabs.com/opencart/index.php?route=account/login')
-    await page.getByPlaceholder('E-Mail Address').fill('bobatea')
+    await page.getByTestId('input-email').fill('bobatea')
     await page.waitForTimeout(2000);
+
+
+
      
 
 })
