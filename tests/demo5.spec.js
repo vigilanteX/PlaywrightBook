@@ -18,10 +18,14 @@ test("demo6 test", async function ({ page }) {
 
 
 //example 2
-await page.goto('http://127.0.0.1:5500/index2.html')
-await page.locator('div').filter({has:page.getByPlaceholder('First Name')}).getByRole('textbox').fill('Aman')
-await page.waitForTimeout(5000)
+// await page.goto('http://127.0.0.1:5500/index2.html')
+// await page.locator('div').filter({has:page.getByPlaceholder('First Name')}).getByRole('textbox').fill('Aman')
+// await page.waitForTimeout(5000)
 
+//example3
+await page.goto('http://127.0.0.1:5500/index2.html')
+await page.locator('div').filter({has:page.getByPlaceholder('First Name')}).locator('input').fill('Aman')
+await page.waitForTimeout(5000)
 
 
 
