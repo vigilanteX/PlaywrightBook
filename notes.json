@@ -1,0 +1,46 @@
+{
+  "locators used in automation": [
+    "xpath",
+    "css selector",
+    "id",
+    "name",
+    "class name",
+    "link text",
+    "partial link text",
+    "tag name"
+  ],
+  "build in locator in playwright": [
+    {
+      "name": "getByRole",
+      "description": "Locate elements by their ARIA role"
+    },
+    {
+        "name":"getByText",
+        "description":"Locate elements by their text content"
+    },
+    {
+        "name":"getByLabel",
+        "description":"Locate form elements by their associated label"
+    },
+    {
+        "name":"getByPlaceholder",
+        "description":"Locate input elements by their placeholder text"
+    },
+    {
+        "name":"getByAltText",
+        "description":"Locate elements by their alt text"
+    },
+    {
+        "name":"getByTitle",
+        "description":"Locate elements by their title attribute"
+    },
+    {
+        "name":"getByTestId",
+        "description":"Locate elements by their data-testid attribute"
+    },
+    {
+        "name":"locator",
+        "description":"A flexible method to create locators using various selector strategies"
+    }
+  ]
+}
