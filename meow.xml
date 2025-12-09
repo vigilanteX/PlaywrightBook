@@ -1,38 +1,28 @@
-<testsuites id="" name="" tests="5" failures="0" skipped="1" errors="0" time="6.900491">
-<testsuite name="demo23.spec.js" timestamp="2025-12-09T17:03:30.412Z" hostname="Google Chrome" tests="5" failures="0" skipped="1" time="11.129" errors="0">
-<testcase name="demo22 test" classname="demo23.spec.js" time="1.974">
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="2.8627870000000004">
+<testsuite name="demo24.spec.js" timestamp="2025-12-09T17:17:47.050Z" hostname="Google Chrome" tests="3" failures="0" skipped="0" time="0.527" errors="0">
+<testcase name="demo24 suite › demo22 test" classname="demo24.spec.js" time="0.294">
 <system-out>
-<![CDATA[demo22 test
+<![CDATA[Before all tests in demo24.spec.js
+Before each test in demo24.spec.js
+demo22 test
+After each test in demo24.spec.js
 ]]>
 </system-out>
 </testcase>
-<testcase name="demo221 test" classname="demo23.spec.js" time="1.951">
+<testcase name="demo24 suite › demo221 test" classname="demo24.spec.js" time="0.114">
 <system-out>
-<![CDATA[demo221 test
+<![CDATA[Before each test in demo24.spec.js
+demo221 test
+After each test in demo24.spec.js
 ]]>
 </system-out>
 </testcase>
-<testcase name="demo223 test" classname="demo23.spec.js" time="1.979">
+<testcase name="demo24 suite › demo223 test" classname="demo24.spec.js" time="0.119">
 <system-out>
-<![CDATA[demo223 test
-]]>
-</system-out>
-</testcase>
-<testcase name="demo226 test" classname="demo23.spec.js" time="0">
-<properties>
-<property name="fixme" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="demo227 test" classname="demo23.spec.js" time="5.225">
-<properties>
-<property name="slow" value="">
-</property>
-</properties>
-<system-out>
-<![CDATA[demo227 test
+<![CDATA[Before each test in demo24.spec.js
+demo223 test
+After each test in demo24.spec.js
+After all tests in demo24.spec.js
 ]]>
 </system-out>
 </testcase>
