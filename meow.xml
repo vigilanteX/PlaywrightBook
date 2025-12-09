@@ -1,44 +1,14 @@
-<testsuites id="" name="" tests="6" failures="0" skipped="2" errors="0" time="3.639799">
-<testsuite name="demo22.spec.js" timestamp="2025-12-09T16:37:01.217Z" hostname="Google Chrome" tests="6" failures="0" skipped="2" time="7.874" errors="0">
-<testcase name="demo22 test" classname="demo22.spec.js" time="1.96">
-<system-out>
-<![CDATA[demo22 test
-]]>
-</system-out>
-</testcase>
-<testcase name="demo221 test" classname="demo22.spec.js" time="1.956">
-<system-out>
-<![CDATA[demo221 test
-]]>
-</system-out>
-</testcase>
-<testcase name="demo223 test" classname="demo22.spec.js" time="1.963">
-<system-out>
-<![CDATA[demo223 test
-]]>
-</system-out>
-</testcase>
-<testcase name="demo224 test" classname="demo22.spec.js" time="0">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="12.311945999999995">
+<testsuite name="demo22.spec.js" timestamp="2025-12-09T16:53:56.497Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="9.809" errors="0">
+<testcase name="demo227 test" classname="demo22.spec.js" time="9.809">
 <properties>
-<property name="skip" value="">
+<property name="slow" value="">
 </property>
 </properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="demo225 test" classname="demo22.spec.js" time="1.995">
-<properties>
-<property name="fail" value="">
-</property>
-</properties>
-</testcase>
-<testcase name="demo226 test" classname="demo22.spec.js" time="0">
-<properties>
-<property name="fixme" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
+<system-out>
+<![CDATA[demo227 test
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>

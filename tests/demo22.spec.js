@@ -21,3 +21,9 @@ test.fail("demo225 test", async ({ page }) => {
 test.fixme("demo226 test", async ({ page }) => {
   console.log("demo226 test");
 });
+
+test("demo227 test", async ({ page }) => {
+  test.slow();
+  await page.goto("https://yahoo.com");
+  console.log("demo227 test");
+});
