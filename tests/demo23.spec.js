@@ -25,5 +25,5 @@ test.fixme("demo226 test", async ({ page }) => {
 test("demo227 test", async ({ page }) => {
   test.slow();
   await page.goto("https://yahoo.com");
-  console.log("demo227 test");
+  console.log("demo227 testx");
 });
