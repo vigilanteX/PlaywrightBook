@@ -1,12 +1,14 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="12.311945999999995">
-<testsuite name="demo22.spec.js" timestamp="2025-12-09T16:53:56.497Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="9.809" errors="0">
-<testcase name="demo227 test" classname="demo22.spec.js" time="9.809">
-<properties>
-<property name="slow" value="">
-</property>
-</properties>
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="4.552974999999977">
+<testsuite name="demo22.spec.js" timestamp="2025-12-09T16:56:21.635Z" hostname="Google Chrome" tests="2" failures="0" skipped="0" time="3.801" errors="0">
+<testcase name="demo22 suite › demo228 test" classname="demo22.spec.js" time="1.899">
 <system-out>
-<![CDATA[demo227 test
+<![CDATA[demo228 test
+]]>
+</system-out>
+</testcase>
+<testcase name="demo22 suite › demo229 test" classname="demo22.spec.js" time="1.902">
+<system-out>
+<![CDATA[demo229 test
 ]]>
 </system-out>
 </testcase>

@@ -27,3 +27,12 @@ test("demo227 test", async ({ page }) => {
   await page.goto("https://yahoo.com");
   console.log("demo227 test");
 });
+
+test.describe("demo22 suite", () => {
+  test("demo228 test", async ({ page }) => {
+    console.log("demo228 test");
+  });
+  test("demo229 test", async ({ page }) => {
+    console.log("demo229 test");
+  });
+});
