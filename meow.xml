@@ -1,14 +1,38 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="4.552974999999977">
-<testsuite name="demo22.spec.js" timestamp="2025-12-09T16:56:21.635Z" hostname="Google Chrome" tests="2" failures="0" skipped="0" time="3.801" errors="0">
-<testcase name="demo22 suite › demo228 test" classname="demo22.spec.js" time="1.899">
+<testsuites id="" name="" tests="5" failures="0" skipped="1" errors="0" time="6.900491">
+<testsuite name="demo23.spec.js" timestamp="2025-12-09T17:03:30.412Z" hostname="Google Chrome" tests="5" failures="0" skipped="1" time="11.129" errors="0">
+<testcase name="demo22 test" classname="demo23.spec.js" time="1.974">
 <system-out>
-<![CDATA[demo228 test
+<![CDATA[demo22 test
 ]]>
 </system-out>
 </testcase>
-<testcase name="demo22 suite › demo229 test" classname="demo22.spec.js" time="1.902">
+<testcase name="demo221 test" classname="demo23.spec.js" time="1.951">
 <system-out>
-<![CDATA[demo229 test
+<![CDATA[demo221 test
+]]>
+</system-out>
+</testcase>
+<testcase name="demo223 test" classname="demo23.spec.js" time="1.979">
+<system-out>
+<![CDATA[demo223 test
+]]>
+</system-out>
+</testcase>
+<testcase name="demo226 test" classname="demo23.spec.js" time="0">
+<properties>
+<property name="fixme" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="demo227 test" classname="demo23.spec.js" time="5.225">
+<properties>
+<property name="slow" value="">
+</property>
+</properties>
+<system-out>
+<![CDATA[demo227 test
 ]]>
 </system-out>
 </testcase>
