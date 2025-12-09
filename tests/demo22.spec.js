@@ -15,3 +15,6 @@ test("demo223 test", async ({ page }) => {
 test.skip("demo224 test", async ({ page }) => {
   console.log("demo224 test");
 });
+test.fail("demo225 test", async ({ page }) => {
+  throw new Error("Intentional failure");
+});
