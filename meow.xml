@@ -1,0 +1,34 @@
+<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="6.601128000000001">
+<testsuite name="demo20.spec.js" timestamp="2025-12-09T12:54:48.131Z" hostname="Google Chrome" tests="3" failures="1" skipped="0" time="10.41" errors="0">
+<testcase name="Test Case 1" classname="demo20.spec.js" time="2.29">
+</testcase>
+<testcase name="Test Case 2" classname="demo20.spec.js" time="2.354">
+</testcase>
+<testcase name="Test Case 3" classname="demo20.spec.js" time="5.766">
+<failure message="demo20.spec.js:10:5 Test Case 3" type="FAILURE">
+<![CDATA[  [Google Chrome] › demo20.spec.js:10:5 › Test Case 3 ──────────────────────────────────────────────
+
+    TimeoutError: page.goto: Timeout 4000ms exceeded.
+    Call log:
+      - navigating to "https://yahoo.com/", waiting until "load"
+
+
+       9 |
+      10 | test("Test Case 3", async ({ page }) => {
+    > 11 |   await page.goto("https://yahoo.com", { timeout: 4000 });
+         |              ^
+      12 | });
+      13 |
+        at /home/aman/Desktop/PlaywrightBook/tests/demo20.spec.js:11:14
+
+    Error Context: ../test-results/demo20-Test-Case-3-Google-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/demo20-Test-Case-3-Google-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

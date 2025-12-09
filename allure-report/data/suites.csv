@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","4259","Test Case 3","Google Chrome","Tue Dec 09 18:30:22 IST 2025","failed","Tue Dec 09 18:30:26 IST 2025","","demo20.spec.js","",""
+"","2519","Test Case 2","Google Chrome","Tue Dec 09 18:30:22 IST 2025","passed","Tue Dec 09 18:30:24 IST 2025","","demo20.spec.js","",""
+"","2531","Test Case 1","Google Chrome","Tue Dec 09 18:30:22 IST 2025","passed","Tue Dec 09 18:30:24 IST 2025","","demo20.spec.js","",""

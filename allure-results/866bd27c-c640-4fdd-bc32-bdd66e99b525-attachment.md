@@ -1,0 +1,324 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - banner [ref=e6]:
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - generic [ref=e11]:
+            - heading "Yahoo Home" [level=1] [ref=e12]
+            - link "Yahoo Home" [ref=e13] [cursor=pointer]:
+              - /url: https://www.yahoo.com/
+              - img [ref=e14]
+              - text: Yahoo Home
+          - search [ref=e17]:
+            - generic [ref=e18]: Search query
+            - combobox "Search query" [active] [ref=e19]
+            - generic:
+              - img
+            - button "Search" [ref=e21] [cursor=pointer]:
+              - img [ref=e22]
+        - navigation [ref=e25]:
+          - list [ref=e26]:
+            - listitem [ref=e27]:
+              - link "News" [ref=e28] [cursor=pointer]:
+                - /url: https://www.yahoo.com/
+            - listitem [ref=e29]:
+              - link "Finance" [ref=e30] [cursor=pointer]:
+                - /url: https://finance.yahoo.com/
+            - listitem [ref=e31]:
+              - link "Sports" [ref=e32] [cursor=pointer]:
+                - /url: https://sports.yahoo.com/
+            - listitem [ref=e33]:
+              - button "More" [ref=e34] [cursor=pointer]:
+                - generic [ref=e35]: More
+                - img [ref=e36]
+        - toolbar [ref=e38]:
+          - link "Check your mail" [ref=e42] [cursor=pointer]:
+            - /url: https://mail.yahoo.com/
+            - img [ref=e43]
+            - generic [ref=e46]: Mail
+          - link "Sign in" [ref=e50] [cursor=pointer]:
+            - /url: https://login.yahoo.com/?.lang=en-US&src=homepage&.done=https%3A%2F%2Fwww.yahoo.com%2F&pspid=2023538075&activity=ybar-signin
+  - generic:
+    - heading "Skip navigation links" [level=2] [ref=e51]
+    - list:
+      - listitem:
+        - link "Skip to main content" [ref=e52] [cursor=pointer]:
+          - /url: "#Main"
+      - listitem:
+        - link "Skip to sidebar" [ref=e53] [cursor=pointer]:
+          - /url: "#Aside"
+  - generic [ref=e55]:
+    - generic [ref=e58]: Advertisement
+    - main [ref=e59]:
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - heading "top stories" [level=2] [ref=e63]
+          - 'link "Senate Republicans remain divided ahead of Obamacare vote: ''A big mistake''" [ref=e68] [cursor=pointer]':
+            - /url: /news/articles/why-senate-republicans-arent-uniting-013257887.html
+            - 'heading "Senate Republicans remain divided ahead of Obamacare vote: ''A big mistake''" [level=3] [ref=e69]': "Senate Republicans remain divided ahead of Obamacare vote: 'A big mistake'"
+            - paragraph [ref=e72]: Senate Republicans have no shortage of health care plans. The challenge is getting all 53 of them to rally behind one.
+            - paragraph [ref=e73]: Read More »
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "Jason Bateman makes rare comment about his relationship with sister Justine" [ref=e77] [cursor=pointer]:
+              - /url: /entertainment/celebrity/articles/jason-bateman-explains-why-sister-181543649.html
+              - heading "Jason Bateman makes rare comment about his relationship with sister Justine" [level=3] [ref=e79]
+          - listitem [ref=e80]:
+            - link "U.S. makes quiet moves to phase out paper checks" [ref=e81] [cursor=pointer]:
+              - /url: /finance/news/could-paper-checks-way-penny-165802651.html
+              - heading "U.S. makes quiet moves to phase out paper checks" [level=3] [ref=e83]
+          - listitem [ref=e84]:
+            - link "Want to leave a party early? Etiquette experts say use this 4-word trick." [ref=e85] [cursor=pointer]:
+              - /url: /lifestyle/articles/4-word-trick-saying-great-153234215.html
+              - heading "Want to leave a party early? Etiquette experts say use this 4-word trick." [level=3] [ref=e87]
+          - listitem [ref=e88]:
+            - link "Heisman Trophy finalists revealed ahead of Saturday's awards ceremony" [ref=e89] [cursor=pointer]:
+              - /url: /sports/college-football/article/2025-heisman-trophy-indiana-qb-fernando-mendoza-ohio-state-qb-julian-sayin-among-finalists-ahead-of-college-football-playoff-224934147.html
+              - heading "Heisman Trophy finalists revealed ahead of Saturday's awards ceremony" [level=3] [ref=e91]
+          - listitem [ref=e92]:
+            - link "Why Gen Z is flocking to SEC universities" [ref=e93] [cursor=pointer]:
+              - /url: /news/articles/why-gen-z-flocking-sec-123000932.html
+              - heading "Why Gen Z is flocking to SEC universities" [level=3] [ref=e95]
+      - generic [ref=e96]:
+        - heading "Stories for you" [level=2] [ref=e101]
+        - list [ref=e102]:
+          - listitem [ref=e103]:
+            - generic [ref=e104]:
+              - link [ref=e106] [cursor=pointer]:
+                - /url: /entertainment/celebrity/articles/andy-richter-smooches-dwts-partners-215356793.html
+              - generic [ref=e107]:
+                - generic [ref=e108]:
+                  - strong [ref=e109]: Celebrity
+                  - generic [ref=e110]: ·
+                  - generic [ref=e111]: Entertainment Weekly
+                - heading "Unexpected romance unfolds as Andy Richter kisses partner's pro boyfriend" [level=3] [ref=e112]:
+                  - link "Unexpected romance unfolds as Andy Richter kisses partner's pro boyfriend" [ref=e113] [cursor=pointer]:
+                    - /url: /entertainment/celebrity/articles/andy-richter-smooches-dwts-partners-215356793.html
+                    - text: Unexpected romance unfolds as Andy Richter kisses partner's pro boyfriend
+                - paragraph [ref=e115]: The love triangle no one was expecting.
+                - generic [ref=e116]:
+                  - img [ref=e117] [cursor=pointer]
+                  - generic "1.3K comments" [ref=e119]: 1.3K
+                  - generic [ref=e120]: ·
+                  - generic [ref=e121]: 3 min read
+          - button "View ad options" [ref=e125] [cursor=pointer]:
+            - img [ref=e126]
+          - listitem [ref=e128]:
+            - generic [ref=e129]:
+              - link [ref=e131] [cursor=pointer]:
+                - /url: /news/articles/car-bomb-kills-5-people-111653700.html
+              - generic [ref=e132]:
+                - generic [ref=e133]:
+                  - strong [ref=e134]: World
+                  - generic [ref=e135]: ·
+                  - generic [ref=e136]: CBS News
+                - heading "Five dead, three officers among victims of car bomb outside police station" [level=3] [ref=e137]:
+                  - link "Five dead, three officers among victims of car bomb outside police station" [ref=e138] [cursor=pointer]:
+                    - /url: /news/articles/car-bomb-kills-5-people-111653700.html
+                    - text: Five dead, three officers among victims of car bomb outside police station
+                - paragraph [ref=e140]: The explosion was so powerful that human remains were scattered throughout the area, police said.
+                - generic [ref=e141]:
+                  - img [ref=e142] [cursor=pointer]
+                  - generic "1.4K comments" [ref=e144]: 1.4K
+                  - generic [ref=e145]: ·
+                  - generic [ref=e146]: 2 min read
+          - listitem [ref=e147]:
+            - generic [ref=e148]:
+              - link [ref=e150] [cursor=pointer]:
+                - /url: /finance/news/25-companies-dominate-humanoid-robot-103552687.html
+              - generic [ref=e151]:
+                - generic [ref=e152]:
+                  - strong [ref=e153]: Business
+                  - generic [ref=e154]: ·
+                  - generic [ref=e155]: Business Insider
+                - heading "The 25 companies that will dominate the humanoid robot race, according to Morgan Stanley" [level=3] [ref=e156]:
+                  - link "The 25 companies that will dominate the humanoid robot race, according to Morgan Stanley" [ref=e157] [cursor=pointer]:
+                    - /url: /finance/news/25-companies-dominate-humanoid-robot-103552687.html
+                    - text: The 25 companies that will dominate the humanoid robot race, according to Morgan Stanley
+                - paragraph [ref=e159]: Analysts at the investment bank estimated the humanoid robot market will be worth more than $5 trillion by 2050.
+                - generic [ref=e160]:
+                  - img [ref=e161] [cursor=pointer]
+                  - generic "20 comments" [ref=e163]: "20"
+                  - generic [ref=e164]: ·
+                  - generic [ref=e165]: 2 min read
+          - listitem [ref=e166]:
+            - generic [ref=e167]:
+              - link [ref=e169] [cursor=pointer]:
+                - /url: /sports/articles/fan-wore-inappropriate-outfit-college-155328298.html
+              - generic [ref=e170]:
+                - generic [ref=e171]:
+                  - strong [ref=e172]: Sports
+                  - generic [ref=e173]: ·
+                  - generic [ref=e174]: The Spun
+                - heading "Fan Who Wore 'Inappropriate' Outfit To College Football Game Arrested" [level=3] [ref=e175]:
+                  - link "Fan Who Wore 'Inappropriate' Outfit To College Football Game Arrested" [ref=e176] [cursor=pointer]:
+                    - /url: /sports/articles/fan-wore-inappropriate-outfit-college-155328298.html
+                    - text: Fan Who Wore 'Inappropriate' Outfit To College Football Game Arrested
+                - paragraph [ref=e178]: The fan who went viral for wearing an "inappropriate" outfit to a college football game has been arrested. A social media influencer and model went viral earlier this season for the outfit she wore to an LSU Tigers football game. She revealed too much with her outfit and even showed off to the ...
+                - generic [ref=e179]:
+                  - img [ref=e180] [cursor=pointer]
+                  - generic "1.5K comments" [ref=e182]: 1.5K
+                  - generic [ref=e183]: ·
+                  - generic [ref=e184]: 1 min read
+          - listitem [ref=e185]:
+            - generic [ref=e186]:
+              - link [ref=e188] [cursor=pointer]:
+                - /url: /finance/news/microsoft-sends-harsh-message-millions-020300869.html
+              - generic [ref=e189]:
+                - generic [ref=e190]:
+                  - strong [ref=e191]: Business
+                  - generic [ref=e192]: ·
+                  - generic [ref=e193]: TheStreet
+                - heading "Microsoft sends harsh message to millions of Microsoft 365 customers" [level=3] [ref=e194]:
+                  - link "Microsoft sends harsh message to millions of Microsoft 365 customers" [ref=e195] [cursor=pointer]:
+                    - /url: /finance/news/microsoft-sends-harsh-message-millions-020300869.html
+                    - text: Microsoft sends harsh message to millions of Microsoft 365 customers
+                - paragraph [ref=e197]: Microsoft's stock experienced volatility after some AI sellers made a headline-grabbing claim that the company failed to meet its aggressive goals and, as a result, reset growth targets. Microsoft says the story went too far. It has thus far maintained its double-digit gains this year, but any ...
+                - generic [ref=e198]:
+                  - img [ref=e199] [cursor=pointer]
+                  - generic "44 comments" [ref=e201]: "44"
+                  - generic [ref=e202]: ·
+                  - generic [ref=e203]: 4 min read
+          - button "View ad options" [ref=e207] [cursor=pointer]:
+            - img [ref=e208]
+          - listitem [ref=e210]:
+            - generic [ref=e211]:
+              - link [ref=e213] [cursor=pointer]:
+                - /url: /lifestyle/articles/thousands-teenage-girls-took-part-033102811.html
+              - generic [ref=e214]:
+                - generic [ref=e215]:
+                  - strong [ref=e216]: Lifestyle
+                  - generic [ref=e217]: ·
+                  - generic [ref=e218]: BuzzFeed
+                - heading "Thousands Of Teenage Girls Took Part In A New Study. What They Revealed Should Terrify You." [level=3] [ref=e219]:
+                  - link "Thousands Of Teenage Girls Took Part In A New Study. What They Revealed Should Terrify You." [ref=e220] [cursor=pointer]:
+                    - /url: /lifestyle/articles/thousands-teenage-girls-took-part-033102811.html
+                    - text: Thousands Of Teenage Girls Took Part In A New Study. What They Revealed Should Terrify You.
+                - paragraph [ref=e222]: "\"As I watch my own young daughter grow, these statistics take on a new, urgent meaning.”"
+                - generic [ref=e223]:
+                  - img [ref=e224] [cursor=pointer]
+                  - generic "238 comments" [ref=e226]: "238"
+                  - generic [ref=e227]: ·
+                  - generic [ref=e228]: 7 min read
+          - listitem [ref=e229]:
+            - generic [ref=e230]:
+              - link [ref=e232] [cursor=pointer]:
+                - /url: /entertainment/celebrity/articles/shaquille-o-neal-reacts-viral-212151972.html
+              - generic [ref=e233]:
+                - generic [ref=e234]:
+                  - strong [ref=e235]: Celebrity
+                  - generic [ref=e236]: ·
+                  - generic [ref=e237]: Us Weekly
+                - heading "Shaquille O’Neal Reacts After Viral Photo With Friend’s Wife Stirs Romance Rumors" [level=3] [ref=e238]:
+                  - link "Shaquille O’Neal Reacts After Viral Photo With Friend’s Wife Stirs Romance Rumors" [ref=e239] [cursor=pointer]:
+                    - /url: /entertainment/celebrity/articles/shaquille-o-neal-reacts-viral-212151972.html
+                    - text: Shaquille O’Neal Reacts After Viral Photo With Friend’s Wife Stirs Romance Rumors
+                - paragraph [ref=e241]: Shaquille O’Neal cleared the air after a cuddly photo with a female friend went viral, explaining that not every picture is necessarily worth a thousand words. O’Neal, 53, posed for a snap with a friend named Monique Martin last week, wrapping his arms around her from behind as the pair smiled for the camera. “My
+                - generic [ref=e242]:
+                  - img [ref=e243] [cursor=pointer]
+                  - generic "75 comments" [ref=e245]: "75"
+                  - generic [ref=e246]: ·
+                  - generic [ref=e247]: 3 min read
+          - listitem [ref=e248]
+      - generic [ref=e299]:
+        - generic [ref=e300]:
+          - img [ref=e303]
+          - generic [ref=e305]: Something went wrong. Try again.
+        - generic [ref=e306]:
+          - link "Refresh Page" [ref=e307] [cursor=pointer]:
+            - /url: /
+          - button "Close" [ref=e308] [cursor=pointer]:
+            - img [ref=e310]
+    - complementary [ref=e312]:
+      - generic [ref=e314]:
+        - generic [ref=e317]:
+          - heading "Trending Now" [level=3] [ref=e320] [cursor=pointer]
+          - generic [ref=e322]:
+            - generic [ref=e323]:
+              - link "1. Russia-Ukraine War" [ref=e325] [cursor=pointer]:
+                - /url: "https://search.yahoo.com/search?p=Russia-Ukraine+War&fr=fp-tts&fr2=p:fp,m:tn,ct:all,kt:org,pg:1,stl:txt,b:"
+                - generic [ref=e326]: "1."
+                - generic [ref=e327]: Russia-Ukraine War
+              - link "2. Donald Trump" [ref=e329] [cursor=pointer]:
+                - /url: "https://search.yahoo.com/search?p=Donald+Trump&fr=fp-tts&fr2=p:fp,m:tn,ct:all,kt:org,pg:1,stl:txt,b:"
+                - generic [ref=e330]: "2."
+                - generic [ref=e331]: Donald Trump
+              - link "3. Michael Virgil" [ref=e333] [cursor=pointer]:
+                - /url: "https://search.yahoo.com/search?p=Michael+Virgil&fr=fp-tts&fr2=p:fp,m:tn,ct:all,kt:org,pg:1,stl:txt,b:"
+                - generic [ref=e334]: "3."
+                - generic [ref=e335]: Michael Virgil
+              - link "4. Philadelphia Eagles" [ref=e337] [cursor=pointer]:
+                - /url: "https://search.yahoo.com/search?p=Philadelphia+Eagles&fr=fp-tts&fr2=p:fp,m:tn,ct:all,kt:org,pg:1,stl:txt,b:"
+                - generic [ref=e338]: "4."
+                - generic [ref=e339]: Philadelphia Eagles
+              - link "5. Japan Earthquake" [ref=e341] [cursor=pointer]:
+                - /url: "https://search.yahoo.com/search?p=Japan+Earthquake&fr=fp-tts&fr2=p:fp,m:tn,ct:all,kt:org,pg:1,stl:txt,b:"
+                - generic [ref=e342]: "5."
+                - generic [ref=e343]: Japan Earthquake
+            - generic [ref=e344]:
+              - link "6. Golden Globe Nominations" [ref=e346] [cursor=pointer]:
+                - /url: "https://search.yahoo.com/search?p=Golden+Globe+Nominations&fr=fp-tts&fr2=p:fp,m:tn,ct:all,kt:org,pg:1,stl:txt,b:"
+                - generic [ref=e347]: "6."
+                - generic [ref=e348]: Golden Globe Nominations
+              - link "7. Daniel Jones" [ref=e350] [cursor=pointer]:
+                - /url: "https://search.yahoo.com/search?p=Daniel+Jones&fr=fp-tts&fr2=p:fp,m:tn,ct:all,kt:org,pg:1,stl:txt,b:"
+                - generic [ref=e351]: "7."
+                - generic [ref=e352]: Daniel Jones
+              - link "8. New York Yankees" [ref=e354] [cursor=pointer]:
+                - /url: "https://search.yahoo.com/search?p=New+York+Yankees&fr=fp-tts&fr2=p:fp,m:tn,ct:all,kt:org,pg:1,stl:txt,b:"
+                - generic [ref=e355]: "8."
+                - generic [ref=e356]: New York Yankees
+              - link "9. The Voice" [ref=e358] [cursor=pointer]:
+                - /url: "https://search.yahoo.com/search?p=The+Voice&fr=fp-tts&fr2=p:fp,m:tn,ct:all,kt:org,pg:1,stl:txt,b:"
+                - generic [ref=e359]: "9."
+                - generic [ref=e360]: The Voice
+              - link "10. Notre Dame" [ref=e362] [cursor=pointer]:
+                - /url: "https://search.yahoo.com/search?p=Notre+Dame&fr=fp-tts&fr2=p:fp,m:tn,ct:all,kt:org,pg:1,stl:txt,b:"
+                - generic [ref=e363]: "10."
+                - generic [ref=e364]: Notre Dame
+        - generic [ref=e366]: Advertisement
+        - generic [ref=e368]:
+          - generic [ref=e369]:
+            - heading "Weather" [level=3] [ref=e372]
+            - generic [ref=e374]:
+              - heading "Pune" [level=4] [ref=e375]
+              - button "View your Locations" [ref=e377] [cursor=pointer]:
+                - img [ref=e378]
+                - generic [ref=e380]: View your Locations
+          - generic [ref=e381]:
+            - generic [ref=e382]:
+              - generic [ref=e383]:
+                - generic [ref=e384]: Today
+                - generic [ref=e386]: Clear. Winds from E to ESE at 6 mph (9.7 kph). The overnight low will be 47 °F (8.3 °C).
+                - generic [ref=e387]:
+                  - generic [ref=e388]: 85°
+                  - generic [ref=e389]: 46°
+              - generic [ref=e390]:
+                - generic [ref=e391]: Wed
+                - generic [ref=e393]: Haze today with a high of 84 °F (28.9 °C) and a low of 46 °F (7.8 °C).
+                - generic [ref=e394]:
+                  - generic [ref=e395]: 84°
+                  - generic [ref=e396]: 46°
+              - generic [ref=e397]:
+                - generic [ref=e398]: Thu
+                - generic [ref=e400]: Haze today with a high of 85 °F (29.4 °C) and a low of 44 °F (6.7 °C).
+                - generic [ref=e401]:
+                  - generic [ref=e402]: 85°
+                  - generic [ref=e403]: 44°
+              - generic [ref=e404]:
+                - generic [ref=e405]: Fri
+                - generic [ref=e407]: Haze today with a high of 84 °F (28.9 °C) and a low of 46 °F (7.8 °C).
+                - generic [ref=e408]:
+                  - generic [ref=e409]: 84°
+                  - generic [ref=e410]: 46°
+            - link "See more AccuWeather" [ref=e411] [cursor=pointer]:
+              - /url: https://www.yahoo.com/news/weather/forecast/55931658
+              - text: See more
+              - img "AccuWeather" [ref=e413]
+        - generic [ref=e425]: Advertisement
+        - generic [ref=e436]: Advertisement
+  - alert [ref=e441]
+```
