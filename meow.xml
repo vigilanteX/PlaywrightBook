@@ -1,11 +1,30 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="3.5676799999997018">
-<testsuite name="demo21.spec.js" timestamp="2025-12-09T14:04:10.506Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.336" errors="0">
-<testcase name="demo21 test" classname="demo21.spec.js" time="2.336">
+<testsuites id="" name="" tests="4" failures="0" skipped="1" errors="0" time="3.061624">
+<testsuite name="demo22.spec.js" timestamp="2025-12-09T16:34:11.373Z" hostname="Google Chrome" tests="4" failures="0" skipped="1" time="1.237" errors="0">
+<testcase name="demo22 test" classname="demo22.spec.js" time="0.409">
 <system-out>
-<![CDATA[ Option 1
- Option 2
+<![CDATA[demo22 test
 ]]>
 </system-out>
+</testcase>
+<testcase name="demo221 test" classname="demo22.spec.js" time="0.411">
+<system-out>
+<![CDATA[demo221 test
+]]>
+</system-out>
+</testcase>
+<testcase name="demo223 test" classname="demo22.spec.js" time="0.417">
+<system-out>
+<![CDATA[demo223 test
+]]>
+</system-out>
+</testcase>
+<testcase name="demo224 test" classname="demo22.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
 </testsuites>
