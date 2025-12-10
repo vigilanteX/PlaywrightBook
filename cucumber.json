@@ -1,11 +1,8 @@
 {
   "default": {
-    "paths": ["tests/features"],
+    "paths": ["tests/features/Case02UsingBackground.feature"],
     "dryRun": false,
     "publishQuiet": true,
-    "require": [
-      "tests/step_definations/Case01SingleScenario.js",
-      "./hooks/*.js"
-    ]
+    "require": ["tests/step_definations/*.js", "./hooks/*.js"]
   }
 }
