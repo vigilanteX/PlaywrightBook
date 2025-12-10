@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "cucumber-js test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -14,6 +16,7 @@
     "allure-playwright": "^3.4.3"
   },
   "dependencies": {
+    "@cucumber/cucumber": "^12.3.0",
     "axios": "^1.13.2"
   }
 }
