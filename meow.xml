@@ -1,28 +1,8 @@
-<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="2.8627870000000004">
-<testsuite name="demo24.spec.js" timestamp="2025-12-09T17:17:47.050Z" hostname="Google Chrome" tests="3" failures="0" skipped="0" time="0.527" errors="0">
-<testcase name="demo24 suite › demo22 test" classname="demo24.spec.js" time="0.294">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="11.737649000000001">
+<testsuite name="POM/tests/Login.spec.js" timestamp="2025-12-10T05:48:31.562Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="10.232" errors="0">
+<testcase name="Login Tests › Valid Login Test1" classname="POM/tests/Login.spec.js" time="10.232">
 <system-out>
-<![CDATA[Before all tests in demo24.spec.js
-Before each test in demo24.spec.js
-demo22 test
-After each test in demo24.spec.js
-]]>
-</system-out>
-</testcase>
-<testcase name="demo24 suite › demo221 test" classname="demo24.spec.js" time="0.114">
-<system-out>
-<![CDATA[Before each test in demo24.spec.js
-demo221 test
-After each test in demo24.spec.js
-]]>
-</system-out>
-</testcase>
-<testcase name="demo24 suite › demo223 test" classname="demo24.spec.js" time="0.119">
-<system-out>
-<![CDATA[Before each test in demo24.spec.js
-demo223 test
-After each test in demo24.spec.js
-After all tests in demo24.spec.js
+<![CDATA[https://naveenautomationlabs.com/opencart/index.php?route=account/account
 ]]>
 </system-out>
 </testcase>
