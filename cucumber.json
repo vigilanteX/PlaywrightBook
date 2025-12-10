@@ -1,6 +1,6 @@
 {
   "default": {
-    "paths": ["tests/features/Case02UsingBackground.feature"],
+    "paths": ["tests/features/Case03PassingData.feature"],
     "dryRun": false,
     "publishQuiet": true,
     "require": ["tests/step_definations/*.js", "./hooks/*.js"]
