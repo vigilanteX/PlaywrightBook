@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="11.737649000000001">
-<testsuite name="POM/tests/Login.spec.js" timestamp="2025-12-10T05:48:31.562Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="10.232" errors="0">
-<testcase name="Login Tests › Valid Login Test1" classname="POM/tests/Login.spec.js" time="10.232">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="16.409512">
+<testsuite name="POM/tests/Login.spec.js" timestamp="2025-12-10T06:04:45.393Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="14.926" errors="0">
+<testcase name="Login Tests › Valid Login Test1" classname="POM/tests/Login.spec.js" time="14.926">
 <system-out>
 <![CDATA[https://naveenautomationlabs.com/opencart/index.php?route=account/account
 ]]>
