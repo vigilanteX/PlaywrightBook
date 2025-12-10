@@ -1,6 +1,6 @@
 {
   "default": {
-    "paths": ["tests/features/Case04PassingDataTable.feature"],
+    "paths": ["tests/features/Case05PassingMultipleData.feature"],
     "dryRun": false,
     "publishQuiet": true,
     "require": ["tests/step_definations/*.js", "./hooks/*.js"]
