@@ -34,6 +34,7 @@ test("POST REQUEST", async function ({ request }) {
     data: employee,
     headers,
     params,
+    maxRetries: 3,
   });
-  console.log(await response.json());
+  console.log(await response.status());
 });
