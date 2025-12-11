@@ -1,8 +1,12 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="16.409512">
-<testsuite name="POM/tests/Login.spec.js" timestamp="2025-12-10T06:04:45.393Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="14.926" errors="0">
-<testcase name="Login Tests › Valid Login Test1" classname="POM/tests/Login.spec.js" time="14.926">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="1.1518580000000074">
+<testsuite name="demo25.spec.js" timestamp="2025-12-11T12:31:51.846Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="0.033" errors="0">
+<testcase name="GET REQUEST TEST" classname="demo25.spec.js" time="0.033">
 <system-out>
-<![CDATA[https://naveenautomationlabs.com/opencart/index.php?route=account/account
+<![CDATA[{
+  status: [32m'success'[39m,
+  message: [32m'Operation completed'[39m,
+  data: { id: [33m101[39m, name: [32m'Sample Item'[39m, active: [33mtrue[39m }
+}
 ]]>
 </system-out>
 </testcase>
