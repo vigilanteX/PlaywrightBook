@@ -15,3 +15,25 @@ test("GET REQUEST TEST", async function ({ request }) {
   //   console.log(await response.headers());
   //   console.log(expect(response).toBeOK());
 });
+
+test("POST REQUEST", async function ({ request }) {
+  const employee = {
+    id: 101,
+    name: "Aman Dixit",
+    department: "Engineering",
+    isActive: true,
+  };
+  const params = { brandSilo: "WPAC" };
+  const headers = {
+    brand: "WBC",
+    "x-userId": "234567",
+    "x-userIdScheme": "CustomerInternalId",
+  };
+
+  const response = await request.post("http://localhost:3000/playwrightpost", {
+    data: employee,
+    headers,
+    params,
+  });
+  console.log(await response.json());
+});
