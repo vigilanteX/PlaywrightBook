@@ -1,14 +1,23 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="7.018419">
-<testsuite name="demo26.spec.js" timestamp="2025-12-12T12:53:23.128Z" hostname="Google Chrome" tests="2" failures="0" skipped="0" time="4.136" errors="0">
-<testcase name="test1" classname="demo26.spec.js" time="1.996">
-<system-out>
-<![CDATA[My Account
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="4.473319000000134">
+<testsuite name="demo27.spec.js" timestamp="2025-12-12T14:31:36.724Z" hostname="Google Chrome" tests="1" failures="1" skipped="0" time="3.283" errors="0">
+<testcase name="mocking" classname="demo27.spec.js" time="3.283">
+<failure message="demo27.spec.js:3:5 mocking" type="FAILURE">
+<![CDATA[  [Google Chrome] › demo27.spec.js:3:5 › mocking ───────────────────────────────────────────────────
+
+    Error: page.waitForTimeout: Target page, context or browser has been closed
+
+      15 |   await page.goto("http://127.0.0.1:5500/website/index.html");
+      16 |   await page.click("#call");
+    > 17 |   await page.waitForTimeout(8000);
+         |              ^
+      18 | });
+      19 |
+        at /home/aman/Desktop/PlaywrightBook/tests/demo27.spec.js:17:14
 ]]>
-</system-out>
-</testcase>
-<testcase name="test2" classname="demo26.spec.js" time="2.14">
+</failure>
 <system-out>
-<![CDATA[My Account
+<![CDATA[found
+post
 ]]>
 </system-out>
 </testcase>
