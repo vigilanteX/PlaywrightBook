@@ -1,62 +1,16 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="2.8832309999996797">
-<testsuite name="demo25.spec.js" timestamp="2025-12-11T13:22:24.535Z" hostname="Google Chrome" tests="1" failures="1" skipped="0" time="1.791" errors="0">
-<testcase name="POST REQUEST" classname="demo25.spec.js" time="1.791">
-<failure message="demo25.spec.js:19:5 POST REQUEST" type="FAILURE">
-<![CDATA[  [Google Chrome] › demo25.spec.js:19:5 › POST REQUEST ─────────────────────────────────────────────
-
-    Error: apiRequestContext.post: Failed after 4 attempt(s): Error: socket hang up
-    Call log:
-      - → POST http://localhost:3000/playwrightpost?brandSilo=WPAC
-        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.4 Safari/537.36
-        - accept: */*
-        - accept-encoding: gzip,deflate,br
-        - brand: WBC
-        - x-userId: 234567
-        - x-userIdScheme: CustomerInternalId
-        - content-type: application/json
-        - content-length: 73
-        - Received ECONNRESET, will retry after 250ms.
-      - → POST http://localhost:3000/playwrightpost?brandSilo=WPAC
-        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.4 Safari/537.36
-        - accept: */*
-        - accept-encoding: gzip,deflate,br
-        - brand: WBC
-        - x-userId: 234567
-        - x-userIdScheme: CustomerInternalId
-        - content-type: application/json
-        - content-length: 73
-        - Received ECONNRESET, will retry after 500ms.
-      - → POST http://localhost:3000/playwrightpost?brandSilo=WPAC
-        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.4 Safari/537.36
-        - accept: */*
-        - accept-encoding: gzip,deflate,br
-        - brand: WBC
-        - x-userId: 234567
-        - x-userIdScheme: CustomerInternalId
-        - content-type: application/json
-        - content-length: 73
-        - Received ECONNRESET, will retry after 1000ms.
-      - → POST http://localhost:3000/playwrightpost?brandSilo=WPAC
-        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.4 Safari/537.36
-        - accept: */*
-        - accept-encoding: gzip,deflate,br
-        - brand: WBC
-        - x-userId: 234567
-        - x-userIdScheme: CustomerInternalId
-        - content-type: application/json
-        - content-length: 73
-
-
-      31 |   };
-      32 |
-    > 33 |   const response = await request.post("http://localhost:3000/playwrightpost", {
-         |                                  ^
-      34 |     data: employee,
-      35 |     headers,
-      36 |     params,
-        at /home/aman/Desktop/PlaywrightBook/tests/demo25.spec.js:33:34
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="7.018419">
+<testsuite name="demo26.spec.js" timestamp="2025-12-12T12:53:23.128Z" hostname="Google Chrome" tests="2" failures="0" skipped="0" time="4.136" errors="0">
+<testcase name="test1" classname="demo26.spec.js" time="1.996">
+<system-out>
+<![CDATA[My Account
 ]]>
-</failure>
+</system-out>
+</testcase>
+<testcase name="test2" classname="demo26.spec.js" time="2.14">
+<system-out>
+<![CDATA[My Account
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>
