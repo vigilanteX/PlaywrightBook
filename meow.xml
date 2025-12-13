@@ -1,23 +1,8 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="4.473319000000134">
-<testsuite name="demo27.spec.js" timestamp="2025-12-12T14:31:36.724Z" hostname="Google Chrome" tests="1" failures="1" skipped="0" time="3.283" errors="0">
-<testcase name="mocking" classname="demo27.spec.js" time="3.283">
-<failure message="demo27.spec.js:3:5 mocking" type="FAILURE">
-<![CDATA[  [Google Chrome] › demo27.spec.js:3:5 › mocking ───────────────────────────────────────────────────
-
-    Error: page.waitForTimeout: Target page, context or browser has been closed
-
-      15 |   await page.goto("http://127.0.0.1:5500/website/index.html");
-      16 |   await page.click("#call");
-    > 17 |   await page.waitForTimeout(8000);
-         |              ^
-      18 | });
-      19 |
-        at /home/aman/Desktop/PlaywrightBook/tests/demo27.spec.js:17:14
-]]>
-</failure>
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="6.309188999999781">
+<testsuite name="demo13_1.spec.js" timestamp="2025-12-13T07:18:49.150Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="4.921" errors="0">
+<testcase name="popup" classname="demo13_1.spec.js" time="4.921">
 <system-out>
-<![CDATA[found
-post
+<![CDATA[Profile / X
 ]]>
 </system-out>
 </testcase>
