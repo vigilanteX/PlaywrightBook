@@ -1,8 +1,10 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="6.309188999999781">
-<testsuite name="demo13_1.spec.js" timestamp="2025-12-13T07:18:49.150Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="4.921" errors="0">
-<testcase name="popup" classname="demo13_1.spec.js" time="4.921">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="3.621728000000119">
+<testsuite name="demotest.spec.js" timestamp="2025-12-14T11:54:07.237Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.221" errors="0">
+<testcase name="request check" classname="demotest.spec.js" time="2.221">
 <system-out>
-<![CDATA[Profile / X
+<![CDATA[http://127.0.0.1:5500/website/index.html
+http://127.0.0.1:5500/website/index.js
+http://localhost:3000/PlaywrightPOST
 ]]>
 </system-out>
 </testcase>
