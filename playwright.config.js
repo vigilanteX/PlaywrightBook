@@ -13,9 +13,10 @@ import { defineConfig, devices } from "@playwright/test";
  * @see https://playwright.dev/docs/test-configuration
  */
 export default defineConfig({
+  timeout: 60000,
   // globalSetup: "./global-setup.js",
   reporter: [["junit", { outputFile: "meow.xml" }]],
-  testDir: "./TRYREVISION",
+  testDir: "./tests",
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -34,7 +35,6 @@ export default defineConfig({
     trace: "off",
     headless: false,
     testIdAttribute: "id",
-    timeout: 60000,
   },
 
   /* Configure projects for major browsers */

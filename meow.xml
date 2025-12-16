@@ -1,12 +1,20 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="3.621728000000119">
-<testsuite name="demotest.spec.js" timestamp="2025-12-14T11:54:07.237Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.221" errors="0">
-<testcase name="request check" classname="demotest.spec.js" time="2.221">
-<system-out>
-<![CDATA[http://127.0.0.1:5500/website/index.html
-http://127.0.0.1:5500/website/index.js
-http://localhost:3000/PlaywrightPOST
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="11.363308999999425">
+<testsuite name="AUTOWAIT_AVAILABLE/actionmethods.spec.js" timestamp="2025-12-16T18:24:07.742Z" hostname="Google Chrome" tests="1" failures="1" skipped="0" time="9.956" errors="0">
+<testcase name="AUTOWAIT_AVAILABLE demo" classname="AUTOWAIT_AVAILABLE/actionmethods.spec.js" time="9.956">
+<failure message="actionmethods.spec.js:3:5 AUTOWAIT_AVAILABLE demo" type="FAILURE">
+<![CDATA[  [Google Chrome] › AUTOWAIT_AVAILABLE/actionmethods.spec.js:3:5 › AUTOWAIT_AVAILABLE demo ─────────
+
+    Error: page.waitForTimeout: Target page, context or browser has been closed
+
+      87 |   await page.waitForTimeout(5000);
+      88 |   await page.locator("#input").dispatchEvent("focus");
+    > 89 |   await page.waitForTimeout(5000);
+         |              ^
+      90 | });
+      91 |
+        at /home/aman/Desktop/PlaywrightBook/tests/AUTOWAIT_AVAILABLE/actionmethods.spec.js:89:14
 ]]>
-</system-out>
+</failure>
 </testcase>
 </testsuite>
 </testsuites>
