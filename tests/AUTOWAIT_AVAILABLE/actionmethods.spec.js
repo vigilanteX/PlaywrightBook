@@ -3,14 +3,14 @@ import { test, page } from "@playwright/test";
 test("AUTOWAIT_AVAILABLE demo", async ({ page, context }) => {
   //1-below line will wait for the element to be visible and enabled before clicking
   //and it will wait for time mentiond in the playwright.config.js file timeout property
-  //await page.locator("#meow").click();
-  //await page.goto("https://www.onlinemictest.com/mouse-test/");
+  // await page.goto("https://www.onlinemictest.com/mouse-test/");
+  // await page.locator("#meows").click();
   //2- below code works for double click
   //wait for the element to be visible and enabled before clicking
-  //   await page.goto("https://doubleclicktest.com/");
-  //   await page.locator("#dcCount").hover();
-  //   await page.locator("#dcCounts").dblclick();
-  //   await page.waitForTimeout(3000);
+  // await page.goto("https://doubleclicktest.com/");
+  // await page.locator("#dcCounts").hover();
+  // await page.locator("#dcCounts").dblclick();
+  // await page.waitForTimeout(3000);
   //3- fill wait for the element to be visible and enabled before filling
   //and this is autowait feature of playwright
   //and fetch timeout from playwright.config.js file timeout property
@@ -81,10 +81,10 @@ test("AUTOWAIT_AVAILABLE demo", async ({ page, context }) => {
   //10-dispatchevent autowait feature of playwright
   //wait for the element to be visible and enabled before dispatching event
   //wait time is fetched from playwright.config.js file timeout property
-  await page.goto(
-    "http://127.0.0.1:5500/tests/AUTOWAIT_AVAILABLE/HTML/index.html"
-  );
-  await page.waitForTimeout(5000);
-  await page.locator("#input").dispatchEvent("focus");
-  await page.waitForTimeout(5000);
+  // await page.goto(
+  //   "http://127.0.0.1:5500/tests/AUTOWAIT_AVAILABLE/HTML/index.html"
+  // );
+  // await page.waitForTimeout(5000);
+  // await page.locator("#input").dispatchEvent("focus");
+  // await page.waitForTimeout(5000);
 });

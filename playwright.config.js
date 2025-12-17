@@ -13,6 +13,9 @@ import { defineConfig, devices } from "@playwright/test";
  * @see https://playwright.dev/docs/test-configuration
  */
 export default defineConfig({
+  expect: {
+    timeout: 30000,
+  },
   timeout: 60000,
   // globalSetup: "./global-setup.js",
   reporter: [["junit", { outputFile: "meow.xml" }]],
@@ -35,6 +38,7 @@ export default defineConfig({
     trace: "off",
     headless: false,
     testIdAttribute: "id",
+    actionTimeout: 14000,
   },
 
   /* Configure projects for major browsers */
