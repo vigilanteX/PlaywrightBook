@@ -1,38 +1,15 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="32.05867599999998">
-<testsuite name="AUTOWAIT_AVAILABLE/assertion.spec.js" timestamp="2025-12-17T18:47:34.374Z" hostname="Google Chrome" tests="1" failures="1" skipped="0" time="30.773" errors="0">
-<testcase name="expect(locator).toBeVisible()" classname="AUTOWAIT_AVAILABLE/assertion.spec.js" time="30.773">
-<failure message="assertion.spec.js:3:5 expect(locator).toBeVisible()" type="FAILURE">
-<![CDATA[  [Google Chrome] › AUTOWAIT_AVAILABLE/assertion.spec.js:3:5 › expect(locator).toBeVisible() ───────
-
-    Error: expect(locator).toHaveCount(expected) failed
-
-    Locator:  locator('//h2[contains(text(),\'Disabled\')]/../div//input')
-    Expected: 5
-    Received: 4
-    Timeout:  30000ms
-
-    Call log:
-      - Expect "toHaveCount" with timeout 30000ms
-      - waiting for locator('//h2[contains(text(),\'Disabled\')]/../div//input')
-        34 × locator resolved to 4 elements
-           - unexpected value "4"
-
-
-      41 |   );
-      42 |   let c = await page.locator("//h2[contains(text(),'Disabled')]/../div//input");
-    > 43 |   await expect(c).toHaveCount(5);
-         |                   ^
-      44 | });
-      45 |
-      46 | // toBeEnabled() checks if the element is enabled (not disabled).
-        at /home/aman/Desktop/PlaywrightBook/tests/AUTOWAIT_AVAILABLE/assertion.spec.js:43:19
-
-    Error Context: ../test-results/AUTOWAIT_AVAILABLE-assertion-expect-locator-toBeVisible--Google-Chrome/error-context.md
-]]>
-</failure>
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="5.946797999999951">
+<testsuite name="demo28.spec.js" timestamp="2025-12-18T08:11:42.659Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.104" errors="0">
+<testcase name="fixture demo" classname="demo28.spec.js" time="2.104">
 <system-out>
-<![CDATA[
-[[ATTACHMENT|test-results/AUTOWAIT_AVAILABLE-assertion-expect-locator-toBeVisible--Google-Chrome/error-context.md]]
+<![CDATA[Setting up test data
+Setting up data connector
+aman dixit
+Username: user@test.com
+Data Connector Connected: true
+Environment Variables: [ [32m'USERNAME'[39m ]
+Tearing down data connector
+Tearing down test data
 ]]>
 </system-out>
 </testcase>
