@@ -39,6 +39,7 @@ export default defineConfig({
     headless: false,
     testIdAttribute: "id",
     actionTimeout: 14000,
+    video: "on",
   },
 
   /* Configure projects for major browsers */

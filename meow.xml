@@ -1,15 +1,9 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="5.946797999999951">
-<testsuite name="demo28.spec.js" timestamp="2025-12-18T08:11:42.659Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.104" errors="0">
-<testcase name="fixture demo" classname="demo28.spec.js" time="2.104">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="15.036515000000014">
+<testsuite name="demo29.spec.js" timestamp="2025-12-18T11:43:37.391Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="13.863" errors="0">
+<testcase name="video record check" classname="demo29.spec.js" time="13.863">
 <system-out>
-<![CDATA[Setting up test data
-Setting up data connector
-aman dixit
-Username: user@test.com
-Data Connector Connected: true
-Environment Variables: [ [32m'USERNAME'[39m ]
-Tearing down data connector
-Tearing down test data
+<![CDATA[
+[[ATTACHMENT|test-results/demo29-video-record-check-Google-Chrome/video.webm]]
 ]]>
 </system-out>
 </testcase>
