@@ -73,3 +73,10 @@ test("locator.selectOption()-value", async function ({ page }) {
   await page.selectOption("#select-demo", { value: "Monday" });
   await page.waitForTimeout(4000);
 });
+test("locator.setInputFiles()", async function ({ page }) {
+  await page.goto(
+    "https://www.lambdatest.com/selenium-playground/upload-file-demo"
+  );
+  await page.locator("#file").setInputFiles("./login.png");
+  await page.waitForTimeout(4000);
+});
