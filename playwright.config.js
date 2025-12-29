@@ -13,15 +13,8 @@ import { defineConfig, devices } from "@playwright/test";
  * @see https://playwright.dev/docs/test-configuration
  */
 export default defineConfig({
-  expect: {
-    timeout: 30000,
-  },
-  timeout: 60000,
-  // globalSetup: "./global-setup.js",
-  reporter: [["junit", { outputFile: "meow.xml" }]],
-  testDir: "./tests",
+  testDir: "./RevisitDec29",
   /* Run tests in files in parallel */
-  fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
@@ -35,11 +28,7 @@ export default defineConfig({
     // baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: "off",
     headless: false,
-    testIdAttribute: "id",
-    actionTimeout: 14000,
-    video: "off",
   },
 
   /* Configure projects for major browsers */
@@ -70,7 +59,7 @@ export default defineConfig({
     // },
     {
       name: "Google Chrome",
-      use: { ...devices["Desktop Chrome"], channel: "chrome" },
+      use: { ...devices["Desktop Chrome"] },
     },
   ],
 

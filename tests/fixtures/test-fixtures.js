@@ -1,4 +1,5 @@
 import { test as base } from "@playwright/test";
+import axios from "axios";
 import dotenv from "dotenv";
 dotenv.config();
 export const test = base.extend({
@@ -17,5 +18,9 @@ export const test = base.extend({
     console.log(process.env.BASE);
     await use({ connected: true });
     console.log("Tearing down data connector");
+  },
+  apiCall: async function ({}, use) {
+    let data = await axios("http://localhost:3000/playwrightget");
+    use(data.data);
   },
 });

@@ -1,9 +1,30 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="15.036515000000014">
-<testsuite name="demo29.spec.js" timestamp="2025-12-18T11:43:37.391Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="13.863" errors="0">
-<testcase name="video record check" classname="demo29.spec.js" time="13.863">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="5.0702359999999995">
+<testsuite name="demo28.spec.js" timestamp="2025-12-18T16:26:19.632Z" hostname="Google Chrome" tests="2" failures="0" skipped="0" time="3.412" errors="0">
+<testcase name="fixture demo" classname="demo28.spec.js" time="2.443">
 <system-out>
-<![CDATA[
-[[ATTACHMENT|test-results/demo29-video-record-check-Google-Chrome/video.webm]]
+<![CDATA[Setting up test data
+Setting up data connector
+MASTER
+Username: user@test.com
+Data Connector Connected: true
+Environment Variables: [ [32m'USERNAME'[39m ]
+{ id: [33m101[39m, name: [32m'Sample Item'[39m, active: [33mtrue[39m }
+Tearing down data connector
+Tearing down test data
+]]>
+</system-out>
+</testcase>
+<testcase name="fixture demo2" classname="demo28.spec.js" time="0.969">
+<system-out>
+<![CDATA[Setting up test data
+Setting up data connector
+MASTER
+Username: user@test.com
+Data Connector Connected: true
+Environment Variables: [ [32m'USERNAME'[39m ]
+{ id: [33m101[39m, name: [32m'Sample Item'[39m, active: [33mtrue[39m }
+Tearing down data connector
+Tearing down test data
 ]]>
 </system-out>
 </testcase>
