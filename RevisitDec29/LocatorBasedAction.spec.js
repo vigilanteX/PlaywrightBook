@@ -57,3 +57,11 @@ test("locator.uncheck()-checkbox", async function ({ page }) {
   await page.locator("//label[text()='Click on check box']/input").uncheck();
   await page.waitForTimeout(4000);
 });
+
+test("locator.selectOption()-by index", async function ({ page }) {
+  await page.goto(
+    "https://www.lambdatest.com/selenium-playground/select-dropdown-demo"
+  );
+  await page.selectOption("#select-demo", { index: 1 });
+  await page.waitForTimeout(4000);
+});
