@@ -33,3 +33,10 @@ test("locator.clear()", async function ({ page }) {
   await page.locator("[placeholder='Please enter your Message']").clear();
   await page.waitForTimeout(4000);
 });
+
+test("locator.press()", async function ({ page }) {
+  await page.goto("https://www.onlinemictest.com/keyboard-test/");
+  await page.waitForTimeout(4000);
+  await page.locator("//strong[text()='light up']").press("Digit0");
+  await page.waitForTimeout(4000);
+});
