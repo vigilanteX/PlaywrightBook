@@ -40,3 +40,11 @@ test("locator.press()", async function ({ page }) {
   await page.locator("//strong[text()='light up']").press("Digit0");
   await page.waitForTimeout(4000);
 });
+
+test("locator.check()-checkbox", async function ({ page }) {
+  await page.goto(
+    "https://www.lambdatest.com/selenium-playground/checkbox-demo"
+  );
+  await page.locator("//label[text()='Click on check box']/input").check();
+  await page.waitForTimeout(4000);
+});
