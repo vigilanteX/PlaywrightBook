@@ -65,3 +65,11 @@ test("locator.selectOption()-by index", async function ({ page }) {
   await page.selectOption("#select-demo", { index: 1 });
   await page.waitForTimeout(4000);
 });
+
+test("locator.selectOption()-value", async function ({ page }) {
+  await page.goto(
+    "https://www.lambdatest.com/selenium-playground/select-dropdown-demo"
+  );
+  await page.selectOption("#select-demo", { value: "Monday" });
+  await page.waitForTimeout(4000);
+});
