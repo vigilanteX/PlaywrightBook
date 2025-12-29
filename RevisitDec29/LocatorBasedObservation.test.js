@@ -8,3 +8,11 @@ test("locator.isVisible()", async function ({ page }) {
   );
   await page.waitForTimeout(4000);
 });
+
+test("locator.isHidden()", async function ({ page }) {
+  await page.goto(
+    "https://www.lambdatest.com/selenium-playground/checkbox-demo"
+  );
+  console.log(await page.locator("//label[text()='meow']").isHidden());
+  await page.waitForTimeout(4000);
+});
