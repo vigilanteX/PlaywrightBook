@@ -22,3 +22,14 @@ test("locator.fill()", async function ({ page }) {
     .fill("manual input");
   await page.waitForTimeout(4000);
 });
+test("locator.clear()", async function ({ page }) {
+  await page.goto(
+    "https://www.lambdatest.com/selenium-playground/simple-form-demo"
+  );
+  await page
+    .locator("[placeholder='Please enter your Message']")
+    .fill("manual input");
+  await page.waitForTimeout(4000);
+  await page.locator("[placeholder='Please enter your Message']").clear();
+  await page.waitForTimeout(4000);
+});
