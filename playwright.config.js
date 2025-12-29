@@ -14,6 +14,7 @@ import { defineConfig, devices } from "@playwright/test";
  */
 export default defineConfig({
   testDir: "./RevisitDec29",
+  testMatch: "**/*.test.js",
   /* Run tests in files in parallel */
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,

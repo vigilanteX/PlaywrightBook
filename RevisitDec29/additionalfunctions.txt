@@ -1,0 +1,48 @@
+1. Verification & State Methods (The "Is" Family)
+While Playwright is famous for auto-waiting, sometimes you need to manually check the state of an element before proceeding or within a conditional logic block.
+
+locator.isVisible(): Returns whether the element is visible.
+
+locator.isEnabled(): Returns whether the element is not disabled.
+
+locator.isChecked(): Specifically for checkboxes and radio buttons.
+
+locator.isEditable(): Checks if the element is an input/textarea and not read-only.
+
+locator.isHidden(): The inverse of isVisible.
+
+2. Retrieval Methods (Getting Data Out)
+These are essential for extracting text or attributes to use in assertions or variables.
+
+locator.textContent(): Gets the text inside an element (including hidden text).
+
+locator.innerText(): Gets only the visible text.
+
+locator.inputValue(): Gets the current value of an <input>, <textarea>, or <select>.
+
+locator.getAttribute(name): Retrieves a specific attribute (e.g., src, href, data-testid).
+
+locator.allInnerTexts(): Returns an array of strings for all elements matching the locator.
+
+3. Drag, Drop, and Scroll
+For more complex UI behaviors that simple clicks can't handle.
+
+locator.dragTo(target): Drag the element to another locator.
+
+locator.scrollIntoViewIfNeeded(): Useful if you need to ensure an element is in the viewport before taking a screenshot or performing a complex hover.
+
+locator.selectText(): Selects the text content of an element (simulates a user highlighting text).
+
+4. Waiting and Counting
+locator.waitFor(): Explicitly waits for a specific state (e.g., attached, visible, hidden). This is useful when you need to wait for an element that might disappear or appear after a long process.
+
+locator.count(): Returns the number of elements matching the locator.
+
+locator.all(): Returns an array of locators, one for each matching element. This is the modern way to iterate over a list.
+
+5. High-Level Convenience Methods
+locator.screenshot(): Takes a screenshot of only that specific element.
+
+locator.evaluate(): Runs a string of JavaScript in the browser context on that element. This is the "escape hatch" for when Playwright’s API doesn't cover a very niche use case.
+
+locator.blur(): Removes focus from the element.
