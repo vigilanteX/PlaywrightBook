@@ -125,3 +125,14 @@ test("locator.inputValue()", async function ({ page }) {
   await page.locator("#name").fill("Aman");
   console.log(await page.locator("#name").inputValue());
 });
+
+//DRAG DROP, SCROLL
+test("drag and drop", async function ({ page }) {
+  await page.goto(
+    "https://www.lambdatest.com/selenium-playground/drag-and-drop-demo"
+  );
+  await page
+    .locator("//span[text()='Draggable 1']")
+    .dragTo(page.locator("#mydropzone"));
+  await page.waitForTimeout(4000);
+});
