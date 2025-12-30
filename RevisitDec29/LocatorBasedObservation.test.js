@@ -176,3 +176,11 @@ test("locator.waitFor()", async function ({ page }) {
   );
   await page.locator(".meow").waitFor({ state: "visible" });
 });
+
+/*Here is the summary of the difference in 4 lines:
+
+* **`page.locator()`** is a **lazy blueprint**: it only stores search instructions and auto-waits for elements when you finally perform an action (like `.click()`).
+* **`page.locator().all()`** is an **eager snapshot**: it instantly returns a standard JS array of all matching elements found on the page at that exact moment.
+* **Crucial Difference**: `.all()` **does not auto-wait**; if the elements haven't rendered yet when it is called, it will simply return an empty array `[]`.
+* **Best Practice**: Use `page.locator()` for standard interactions and `.all()` when you need to loop through a dynamic list of items. */
+test("locator.all()", async function ({ page }) {});
