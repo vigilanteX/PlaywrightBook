@@ -112,3 +112,9 @@ test("allInnerTexts()", async function ({ page }) {
   await page.goto("http://127.0.0.1:5500/RevisitDec29/indexreturnable.html");
   console.log(await page.locator("#container").allInnerTexts());
 });
+test("getAttribute()", async function ({ page }) {
+  await page.goto(
+    "https://www.lambdatest.com/selenium-playground/input-form-demo"
+  );
+  console.log(await page.locator("#inputEmail").getAttribute("placeholder"));
+});
