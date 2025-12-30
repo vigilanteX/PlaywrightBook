@@ -184,3 +184,5 @@ test("locator.waitFor()", async function ({ page }) {
 * **Crucial Difference**: `.all()` **does not auto-wait**; if the elements haven't rendered yet when it is called, it will simply return an empty array `[]`.
 * **Best Practice**: Use `page.locator()` for standard interactions and `.all()` when you need to loop through a dynamic list of items. */
 test("locator.all()", async function ({ page }) {});
+//locator.count() is eager: it returns the number of elements matching the locator at that exact moment
+test("locator.count()", async function ({ page }) {});
