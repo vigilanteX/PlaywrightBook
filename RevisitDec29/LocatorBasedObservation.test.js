@@ -54,6 +54,7 @@ Hidden Input,❌,✅,❌
 */
 //If you call isEditable() on a <div> or <span> that doesn't have the contenteditable attribute,
 //it will return false, even if the element is visible and enabled.
+//FYI-contenteditable attribute is a global HTML attribute that allows you to turn almost any standard HTML element (like a <div>, <p>, or <h1>) into an editable text area.
 test("locator.isEditable()", async function ({ page }) {
   await page.goto(
     "https://www.lambdatest.com/selenium-playground/checkbox-demo"
