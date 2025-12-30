@@ -147,3 +147,18 @@ test("scrollIntoViewIfNeeded()", async function ({ page }) {
   await page.locator("[value='Login']").scrollIntoViewIfNeeded();
   await page.waitForTimeout(5000);
 });
+test("selectText()", async function ({ page }) {
+  await page.goto(
+    "https://naveenautomationlabs.com/opencart/index.php?route=account/login"
+  );
+  console.log(await page.locator().selectText());
+  await page.waitForTimeout(5000);
+});
+
+test("select text", async function ({ page }) {
+  await page.goto(
+    "https://naveenautomationlabs.com/opencart/index.php?route=account/login"
+  );
+  await page.locator("//p[contains(text(),'By creating')]").selectText();
+  await page.waitForTimeout(4000);
+});
