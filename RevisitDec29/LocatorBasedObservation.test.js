@@ -118,3 +118,10 @@ test("getAttribute()", async function ({ page }) {
   );
   console.log(await page.locator("#inputEmail").getAttribute("placeholder"));
 });
+test("locator.inputValue()", async function ({ page }) {
+  await page.goto(
+    "https://www.lambdatest.com/selenium-playground/input-form-demo"
+  );
+  await page.locator("#name").fill("Aman");
+  console.log(await page.locator("#name").inputValue());
+});
