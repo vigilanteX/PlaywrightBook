@@ -162,3 +162,17 @@ test("select text", async function ({ page }) {
   await page.locator("//p[contains(text(),'By creating')]").selectText();
   await page.waitForTimeout(4000);
 });
+/*
+State,Description
+'visible',(Default) Waits until the element is visible (has non-zero size and is not hidden by CSS).
+'hidden',Waits until the element is either removed from the DOM or hidden via CSS.
+'attached',Waits until the element is present in the DOM (even if it's hidden).
+'detached',Waits until the element is completely removed from the DOM.
+*/
+//only timeout proeprty works
+test("locator.waitFor()", async function ({ page }) {
+  await page.goto(
+    "https://naveenautomationlabs.com/opencart/index.php?route=account/login"
+  );
+  await page.locator(".meow").waitFor({ state: "visible" });
+});
