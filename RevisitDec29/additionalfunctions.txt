@@ -17,6 +17,8 @@ Element is in DOM but has display: none	true	false
 Element is not in the DOM at all	true	false
 Element is transparent (opacity: 0)	false*	true*
 
+
+
 2. Retrieval Methods (Getting Data Out)
 These are essential for extracting text or attributes to use in assertions or variables.
 

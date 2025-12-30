@@ -43,3 +43,23 @@ test("locator.isEnabled()", async function ({ page }) {
     await page.locator("(//label[contains(text(),'2')])[1]/input").isEnabled()
   );
 });
+//isEditable() is specifically designed for input fields (like <input>, <textarea>, or elements with contenteditable="true")
+/*
+State,isVisible(),isEnabled(),isEditable()
+Normal Input,✅,✅,✅
+Disabled Input,✅,❌,❌
+Read-only Input,✅,✅,❌
+Enabled Button,✅,✅,❌
+Hidden Input,❌,✅,❌
+*/
+//If you call isEditable() on a <div> or <span> that doesn't have the contenteditable attribute,
+//it will return false, even if the element is visible and enabled.
+test("locator.isEditable()", async function ({ page }) {
+  await page.goto(
+    "https://www.lambdatest.com/selenium-playground/checkbox-demo"
+  );
+  console.log(
+    await page.locator("(//label[contains(text(),'4')])[1]/input").isEditable(),
+    await page.locator("(//label[contains(text(),'4')])[2]/input").isEditable()
+  );
+});
