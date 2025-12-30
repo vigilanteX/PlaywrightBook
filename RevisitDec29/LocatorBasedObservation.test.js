@@ -33,3 +33,13 @@ test("locator.isChecked()", async function ({ page }) {
   );
   await page.waitForTimeout(4000);
 });
+//An element is considered enabled if it does not have a disabled attribute. This applies to elements like <button>, <input>, <select>, and <textarea>
+test("locator.isEnabled()", async function ({ page }) {
+  await page.goto(
+    "https://www.lambdatest.com/selenium-playground/checkbox-demo"
+  );
+  console.log(
+    await page.locator("(//label[contains(text(),'4')])[1]/input").isEnabled(),
+    await page.locator("(//label[contains(text(),'2')])[1]/input").isEnabled()
+  );
+});
