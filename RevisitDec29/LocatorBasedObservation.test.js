@@ -135,4 +135,15 @@ test("drag and drop", async function ({ page }) {
     .locator("//span[text()='Draggable 1']")
     .dragTo(page.locator("#mydropzone"));
   await page.waitForTimeout(4000);
+  await page.locator().scrollIntoViewIfNeeded();
+});
+
+test("scrollIntoViewIfNeeded()", async function ({ page }) {
+  await page.setViewportSize({ width: 500, height: 500 });
+  await page.goto(
+    "https://naveenautomationlabs.com/opencart/index.php?route=account/login"
+  );
+  await page.waitForTimeout(5000);
+  await page.locator("[value='Login']").scrollIntoViewIfNeeded();
+  await page.waitForTimeout(5000);
 });
