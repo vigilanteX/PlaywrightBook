@@ -1,0 +1,74 @@
+In Playwright, assertions are handled through the expect library. These assertions are "web-first," meaning they automatically retry until a condition is met or a timeout is reached. This significantly reduces flakiness caused by loading states or animations.
+
+1. Auto-Retrying Assertions (Async)
+These are the most common methods used for UI testing. Since they are asynchronous, you must use the await keyword.
+Assertion Method
+Description
+await expect(locator).toBeVisible()
+Element is visible on the page.
+await expect(locator).toBeHidden()
+Element is not visible or not in DOM.
+await expect(locator).toContainText('text')
+Element contains the specified substring.
+await expect(locator).toHaveText('exact text')
+Element matches the string exactly.
+await expect(locator).toHaveValue('value')
+Input/Select/Textarea has a specific value.
+await expect(locator).toBeChecked()
+Checkbox or radio button is checked.
+await expect(locator).toBeEnabled()
+Element is not disabled.
+await expect(locator).toHaveAttribute('name', 'val')
+Element has a specific attribute value.
+await expect(locator).toHaveClass('class-name')
+Element has a specific CSS class.
+await expect(locator).toHaveCount(3)
+List has exactly N elements.
+await expect(page).toHaveURL(/.*checkout/)
+Page URL matches a string or Regex.
+await expect(page).toHaveTitle('Home')
+Page title matches.
+
+2. Non-Retrying Assertions (Sync)
+These are used for immediate checks on data, variables, or API responses. They do not wait or retry.
+Assertion Method
+Description
+expect(value).toBe(5)
+Exact equality (===).
+expect(value).toEqual(obj)
+Deep equality (useful for objects/arrays).
+expect(value).toBeTruthy()
+Value is truthy.
+expect(value).toContain('item')
+Array or string contains an item.
+expect(value).toBeDefined()
+Value is not undefined.
+
+3. Negating Assertions
+You can check for the opposite of any condition by inserting .not before the method.
+JavaScript
+// Examples of negation
+await expect(locator).not.toBeVisible();
+await expect(locator).not.toContainText('Error');
+expect(response.status()).not.toBe(404);
+
+4. Customizing Assertions
+You can provide custom error messages or adjust the timeout for a specific check.
+Custom Error Messages
+JavaScript
+await expect(locator, 'The submit button should be blue').toHaveClass(/blue-btn/);
+Specific Timeouts
+If a specific action takes longer than the default 5 seconds, you can override it:
+JavaScript
+await expect(locator).toBeVisible({ timeout: 10000 });
+
+5. Soft Assertions
+By default, if an assertion fails, the test stops. Soft assertions allow the test to continue and only report the failures at the end.
+JavaScript
+// Test will keep running even if this fails
+await expect.soft(page.getByText('Welcome')).toBeVisible();
+
+// This will run regardless of the result above
+await page.getByRole('button', { name: 'Next' }).click();
+
+Would you like me to show you how to create a custom assertion or how to configure global timeouts in your playwright.config.ts?
