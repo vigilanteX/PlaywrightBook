@@ -62,6 +62,12 @@ export default defineConfig({
       name: "Google Chrome",
       use: { ...devices["Desktop Chrome"] },
     },
+    {
+      name: "Fixtures",
+      use: { headless: false, ...devices["Desktop Chrome"] },
+      testMatch: "**/*.spec.js",
+      testDir: "RevisitDec29/fixtures",
+    },
   ],
 
   /* Run your local dev server before starting the tests */
