@@ -1,6 +1,5 @@
 import { test as custom } from "@playwright/test";
-
-export const tester = custom.extend({
+const tester = custom.extend({
   name: "aman dixit",
   print: async function ({ page }, use) {
     await page.goto(
@@ -12,3 +11,5 @@ export const tester = custom.extend({
     await page.close();
   },
 });
+
+export default tester;
