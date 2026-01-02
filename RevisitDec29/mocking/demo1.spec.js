@@ -16,7 +16,7 @@ test.skip("mock request", async function ({ page }) {
   await page.locator("#callApiBtn").click();
 });
 
-test("mock response", async function ({ page }) {
+test.skip("mock response", async function ({ page }) {
   await page.goto("http://127.0.0.1:5500/RevisitDec29/mocking/index.html");
   await page.waitForTimeout(5000);
 
@@ -24,6 +24,16 @@ test("mock response", async function ({ page }) {
     const data = { name: "Aman", age: 100, meow: "CAT" };
     await r.fulfill({ body: JSON.stringify(data) });
   });
+  await page.locator("#callApiBtn").click();
+  await page.waitForTimeout(5000);
+});
+
+test("abort scenario", async function ({ page }) {
+  await page.route("**/playwrightserver", async function (r) {
+    r.abort("accessdenied");
+  });
+  await page.goto("http://127.0.0.1:5500/RevisitDec29/mocking/index.html");
+  await page.waitForTimeout(5000);
   await page.locator("#callApiBtn").click();
   await page.waitForTimeout(5000);
 });
