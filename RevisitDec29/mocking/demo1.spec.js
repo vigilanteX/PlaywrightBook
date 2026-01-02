@@ -28,12 +28,26 @@ test.skip("mock response", async function ({ page }) {
   await page.waitForTimeout(5000);
 });
 
-test("abort scenario", async function ({ page }) {
+test.skip("abort scenario", async function ({ page }) {
   await page.route("**/playwrightserver", async function (r) {
     r.abort("accessdenied");
   });
   await page.goto("http://127.0.0.1:5500/RevisitDec29/mocking/index.html");
   await page.waitForTimeout(5000);
+  await page.locator("#callApiBtn").click();
+  await page.waitForTimeout(5000);
+});
+
+test("fetch", async function ({ page }) {
+  await page.route("**/playwrightserver", async function (r) {
+    const f = await r.fetch();
+    const body = await f.body();
+    const responseobject = JSON.parse(body.toString());
+    responseobject.title = "Modified";
+    const stringModified = JSON.stringify(responseobject);
+    await r.fulfill({ body: stringModified });
+  });
+  await page.goto("http://127.0.0.1:5500/RevisitDec29/mocking/index.html");
   await page.locator("#callApiBtn").click();
   await page.waitForTimeout(5000);
 });
