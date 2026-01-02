@@ -68,6 +68,12 @@ export default defineConfig({
       testMatch: "**/*.spec.js",
       testDir: "RevisitDec29/fixtures",
     },
+    {
+      name: "mocking",
+      use: { headless: false },
+      testDir: "RevisitDec29/mocking",
+      testMatch: "demo1.spec.js",
+    },
   ],
 
   /* Run your local dev server before starting the tests */

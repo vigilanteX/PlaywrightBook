@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>API Call on Button Click</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 40px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      pre {
+        background: #f4f4f4;
+        padding: 15px;
+        margin-top: 20px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Call API on Button Click</h2>
+
+    <button id="callApiBtn">Call API</button>
+
+    <pre id="result">Response will appear here...</pre>
+
+    <script>
+      const button = document.getElementById("callApiBtn");
+      const result = document.getElementById("result");
+
+      button.addEventListener("click", async () => {
+        result.textContent = "Loading...";
+        const rq = { name: "Aman", age: 100, department: "IT" };
+
+        try {
+          // Example public API
+          const response = await fetch(
+            "http://localhost:3000/playwrightserver",
+            {
+              method: "POST",
+              body: JSON.stringify(rq),
+            }
+          );
+
+          if (!response.ok) {
+            throw new Error("API call failed");
+          }
+
+          const data = await response.json();
+          result.textContent = JSON.stringify(data, null, 2);
+        } catch (error) {
+          result.textContent = "Error: " + error.message;
+        }
+      });
+    </script>
+  </body>
+</html>
