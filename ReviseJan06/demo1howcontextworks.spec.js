@@ -18,3 +18,7 @@ test("context", async function () {
   );
   await page2.waitForTimeout(5000);
 });
+
+test("only browser", async function ({ browser }) {});
+test("only context", async function ({ context }) {});
+test("only page", async function ({ page }) {});
