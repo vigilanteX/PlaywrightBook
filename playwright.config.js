@@ -14,7 +14,7 @@ import { defineConfig, devices } from "@playwright/test";
  */
 export default defineConfig({
   timeout: 23000,
-  testDir: "./RevisitDec29",
+  testDir: "./RevisitJan06",
   /* Run tests in files in parallel */
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
@@ -73,6 +73,11 @@ export default defineConfig({
       use: { headless: false },
       testDir: "RevisitDec29/mocking",
       testMatch: "demo1.spec.js",
+    },
+    {
+      name: "playwrightfixture",
+      use: { headless: false },
+      testDir: "ReviseJan06",
     },
   ],
 

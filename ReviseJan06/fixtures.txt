@@ -1,0 +1,7 @@
+Fixture,Scope,Description
+page,Test,An isolated browser tab. This is the most used fixture.
+context,Test,An isolated browser session (like incognito). A page belongs to a context.
+request,Test,An APIRequestContext instance for making HTTP/API calls.
+browser,Worker,"The actual browser instance (Chromium, Firefox, or WebKit)."
+browserName,Worker,"A string representing the current browser (e.g., 'chromium')."
+playwright,Worker,"The Playwright engine instance, used to create new contexts or browsers manually."
