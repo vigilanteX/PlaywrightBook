@@ -92,6 +92,11 @@ export default defineConfig({
       testDir: "ReviseJan06",
       testMatch: "**/access*.spec.js",
     },
+    {
+      name: "07jan",
+      use: { headless: false },
+      testDir: "ReviseJan07/Demo1GenericAssertions",
+    },
   ],
 
   /* Run your local dev server before starting the tests */
