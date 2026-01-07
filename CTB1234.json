@@ -1,0 +1,23 @@
+{
+  "CTB1234": {
+    "id": "usr_9f3b2c41",
+    "name": "Aarav Mehta",
+    "email": "aarav.mehta87@example.com",
+    "age": 29,
+    "isActive": true,
+    "role": "admin",
+    "createdAt": "2026-01-06T14:23:51Z",
+    "address": {
+      "street": "42 MG Road",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "postalCode": "560001",
+      "country": "India"
+    },
+    "preferences": {
+      "language": "en",
+      "notifications": true,
+      "theme": "dark"
+    }
+  }
+}
