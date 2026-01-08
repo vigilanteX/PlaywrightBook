@@ -95,7 +95,11 @@ export default defineConfig({
     {
       name: "07jan",
       use: { headless: false },
-      testDir: "ReviseJan07/Demo1GenericAssertions",
+      testDir:
+        "ReviseJan07/Demo02AutoWaitEnabledAssertions/04Attributes & Classes",
+      expect: {
+        timeout: 20000,
+      },
     },
   ],
 

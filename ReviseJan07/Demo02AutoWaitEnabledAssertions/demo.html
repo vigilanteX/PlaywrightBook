@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .editor-container {
+        border: 2px solid #007bff;
+        padding: 15px;
+        min-height: 100px;
+        border-radius: 8px;
+        font-family: sans-serif;
+        margin-bottom: 20px;
+      }
+
+      /* Style for when the user clicks inside */
+      .editor-container:focus {
+        outline: none;
+        border-color: #0056b3;
+        background-color: #f9f9f9;
+      }
+
+      label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="greet">Hello world</h1>
+    <h1 style="width: 0; height: 0; overflow: hidden" id="w0h0">
+      Hello world width0 height0
+    </h1>
+    <h1 id="displaynonegreet" style="display: none">Hello world</h1>
+    <h1 id="visibilityhiddengreet" style="visibility: hidden">Hello world</h1>
+    <h1 id="opacity0greet" style="opacity: 0">Hello world</h1>
+    <input placeholder="enter value" id="enabledip" />
+    <input placeholder="enter value" disabled id="disabledip" />
+    <input placeholder="enter value" aria-disabled="true" id="ariadisabledip" />
+    <textarea id="mytextarea" placeholder="my text area"></textarea>
+    <input placeholder="enter value" readonly id="readonlyip" />
+
+    <div
+      contenteditable="true"
+      class="editor-container"
+      id="mydivtextarea"
+    ></div>
+    <span
+      contenteditable="true"
+      class="editor-container"
+      id="myspantextarea"
+    ></span>
+    <form>
+      <!-- Radio buttons (enabled by default) -->
+      <p>Gender:</p>
+      <label>
+        <input type="radio" name="gender" value="male" checked />
+        Male </label
+      ><br />
+
+      <label>
+        <input type="radio" name="gender" value="female" />
+        Female
+      </label>
+
+      <br /><br />
+
+      <!-- Checkboxes -->
+      <p>Hobbies:</p>
+      <label>
+        <input type="checkbox" name="hobby" value="reading" checked />
+        Reading </label
+      ><br />
+
+      <label>
+        <input type="checkbox" name="hobby" value="music" />
+        Music
+      </label>
+    </form>
+    <div id="demo-box">
+      Hello
+      <span style="display: none">Secret</span>
+      World
+    </div>
+  </body>
+</html>
