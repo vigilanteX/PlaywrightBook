@@ -101,6 +101,11 @@ export default defineConfig({
         timeout: 20000,
       },
     },
+    {
+      name: "jan08",
+      use: { headless: false },
+      testDir: "ReviseJan08/API Request",
+    },
   ],
 
   /* Run your local dev server before starting the tests */
