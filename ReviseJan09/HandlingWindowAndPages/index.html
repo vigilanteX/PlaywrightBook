@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Open 2 Window Popups</title>
+  </head>
+  <body>
+    <a href="#" id="openTwoWindows">Open 2 window popups</a>
+
+    <script>
+      document
+        .getElementById("openTwoWindows")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+
+          // First window popup
+          window.open(
+            "https://example1.com",
+            "popup1",
+            "noopener,width=500,height=500,left=650,top=100"
+          ),
+            window.open(
+              "https://example2.com",
+              "popup2",
+              "noopener,width=500,height=500,left=650,top=100"
+            );
+        });
+    </script>
+  </body>
+</html>

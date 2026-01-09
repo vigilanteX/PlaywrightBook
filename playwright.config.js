@@ -106,6 +106,11 @@ export default defineConfig({
       use: { headless: false },
       testDir: "ReviseJan08/API Request",
     },
+    {
+      name: "jan09",
+      use: { headless: false },
+      testDir: "ReviseJan09/HandlingWindowAndPages",
+    },
   ],
 
   /* Run your local dev server before starting the tests */

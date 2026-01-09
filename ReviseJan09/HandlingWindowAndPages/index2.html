@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Open 3 Tabs</title>
+  </head>
+  <body>
+    <button id="openTabs">Open 3 Tabs</button>
+
+    <script>
+      document
+        .getElementById("openTabs")
+        .addEventListener("click", function () {
+          // Tab 1: Google
+          window.open("https://www.google.com", "_blank");
+
+          // Tab 2: LambdaTest Window Popup Demo
+          window.open(
+            "https://www.lambdatest.com/selenium-playground/window-popup-modal-demo",
+            "_blank"
+          );
+
+          // Tab 3: Naveen Automation Labs Login
+          window.open(
+            "https://naveenautomationlabs.com/opencart/index.php?route=account/login",
+            "_blank"
+          );
+        });
+    </script>
+  </body>
+</html>
