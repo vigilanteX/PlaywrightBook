@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page Lifecycle Events Demo</title>
+
+    <!-- Blocking script -->
+    <script>
+      console.log("1️⃣ Blocking script in <head> executed");
+    </script>
+
+    <!-- Async script simulation -->
+    <script async>
+      setTimeout(() => {
+        console.log("6️⃣ Async script (simulated) executed");
+      }, 0);
+    </script>
+
+    <style>
+      body {
+        font-family: Arial;
+        height: 2000px; /* force scroll */
+      }
+      img {
+        margin-top: 1200px;
+        width: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Open DevTools Console</h1>
+    <p>Scroll down to trigger lazy image loading.</p>
+
+    <script>
+      console.log("2️⃣ Inline script during HTML parsing");
+    </script>
+
+    <!-- DOMContentLoaded -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log("3️⃣ DOMContentLoaded fired");
+      });
+    </script>
+
+    <!-- Load event -->
+    <script>
+      window.addEventListener("load", () => {
+        console.log("4️⃣ window.load fired");
+      });
+    </script>
+
+    <!-- Lazy-loaded image -->
+    <img
+      src="https://via.placeholder.com/300"
+      loading="lazy"
+      alt="Lazy Image"
+      onload="console.log('5️⃣ Lazy-loaded image loaded')"
+    />
+
+    <!-- Async fetch simulation -->
+    <script>
+      setTimeout(() => {
+        console.log("7️⃣ Async operation (API-like) completed");
+      }, 2000);
+    </script>
+  </body>
+</html>
