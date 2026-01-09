@@ -109,7 +109,7 @@ export default defineConfig({
     {
       name: "jan09",
       use: { headless: false },
-      testDir: "ReviseJan09/HandlingWindowAndPages",
+      testDir: "ReviseJan09/waitForSelector and waitForLoadState",
     },
   ],
 
