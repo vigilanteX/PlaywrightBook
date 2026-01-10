@@ -13,7 +13,7 @@ import { defineConfig, devices } from "@playwright/test";
  * @see https://playwright.dev/docs/test-configuration
  */
 export default defineConfig({
-  timeout: 23000,
+  timeout: 40000,
   fullyParallel: true,
   testDir: "./RevisitJan06",
   /* Run tests in files in parallel */
@@ -108,8 +108,8 @@ export default defineConfig({
     },
     {
       name: "jan09",
-      use: { headless: false },
-      testDir: "ReviseJan09/waitForSelector and waitForLoadState",
+      use: { headless: false, navigationTimeout: 30000 },
+      testDir: "ReviseJan09/HandlingWindowAndPages",
     },
   ],
 

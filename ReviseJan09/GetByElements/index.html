@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Playwright Locator Practice</title>
+  </head>
+
+  <body>
+    <!-- getByText -->
+    <h1>Login Page</h1>
+    <p class="info-text">Please enter your credentials</p>
+
+    <!-- getByLabel -->
+    <form>
+      <label for="email">Email Address</label>
+      <input id="email" type="email" />
+
+      <br /><br />
+
+      <label for="password">Password</label>
+      <input id="password" type="password" />
+
+      <br /><br />
+
+      <!-- getByPlaceholder -->
+      <input type="text" placeholder="Enter your username" />
+
+      <br /><br />
+
+      <!-- getByTestId -->
+      <button data-testid="login-btn">Login</button>
+    </form>
+
+    <br />
+
+    <!-- getByAltText -->
+    <img src="logo.png" alt="Company Logo" width="120" />
+
+    <br /><br />
+
+    <!-- getByTitle -->
+    <span title="Help Icon">❓</span>
+
+    <br /><br />
+
+    <!-- locator (CSS / XPath fallback) -->
+    <div id="footer">
+      <p class="copyright">© 2026 Automation Corp</p>
+    </div>
+  </body>
+</html>
