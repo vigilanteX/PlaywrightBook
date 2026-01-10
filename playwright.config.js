@@ -111,6 +111,11 @@ export default defineConfig({
       use: { headless: false, navigationTimeout: 30000 },
       testDir: "ReviseJan09/HandlingWindowAndPages",
     },
+    {
+      name: "jan10",
+      use: { headless: false, navigationTimeout: 30000 },
+      testDir: "ReviseJan07/Demo02AutoWaitEnabledAssertions/04Tohavescreesnhot",
+    },
   ],
 
   /* Run your local dev server before starting the tests */
