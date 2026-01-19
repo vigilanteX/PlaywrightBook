@@ -1,0 +1,18 @@
+npx playwright codegen https://naveenautomationlabs.com/opencart/index.php?route=account/login
+
+
+
+npx playwright test --ui
+opens some playwright UI having console and network tab
+and steps
+play button to execute testcase
+corresponding to test steps whole actions with screens
+
+
+npx playwright test --debug--->This triggers inspector
+Opens playwright in debug mode like debug point and you can move forward by step by step using arrow icon or simply resume
+
+
+
+npx playwright test --headed
+npx playwright test tests/login.spec.ts

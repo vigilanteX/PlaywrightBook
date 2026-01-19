@@ -7,4 +7,8 @@ test("test attach", async function ({ page }, testInfo) {
     body: ss,
     contentType: "image/png",
   });
+  testInfo.attach("debugger", {
+    body: "some debug info",
+    contentType: "text/plain",
+  });
 });

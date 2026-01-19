@@ -15,13 +15,12 @@ import { defineConfig, devices } from "@playwright/test";
 export default defineConfig({
   timeout: 40000,
   fullyParallel: true,
-  testDir: "./RevisitJan06",
   /* Run tests in files in parallel */
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
   /* Opt out of parallel tests on CI. */
-  workers: 2,
+  workers: 4,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -59,72 +58,78 @@ export default defineConfig({
     //   name: 'Microsoft Edge',
     //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
     // },
+    // {
+    //   name: "Google Chrome",
+    //   use: { ...devices["Desktop Chrome"] },
+    // },
+    // {
+    //   name: "Fixtures",
+    //   use: { headless: false, ...devices["Desktop Chrome"] },
+    //   testMatch: "**/*.spec.js",
+    //   testDir: "RevisitDec29/fixtures",
+    // },
+    // {
+    //   name: "mocking",
+    //   use: { headless: false },
+    //   testDir: "RevisitDec29/mocking",
+    //   testMatch: "demo1.spec.js",
+    // },
+    // {
+    //   name: "playwrightfixture",
+    //   use: { headless: false },
+    //   testDir: "ReviseJan06",
+    // },
+    // {
+    //   name: "desccontext",
+    //   use: { headless: false },
+    //   testDir: "ReviseJan06",
+    //   testMatch: "**/demotest*.spec.js",
+    // },
+    // {
+    //   name: "mycus",
+    //   use: { headless: false },
+    //   testDir: "ReviseJan06",
+    //   testMatch: "**/access*.spec.js",
+    // },
+    // {
+    //   name: "07jan",
+    //   use: { headless: false },
+    //   testDir:
+    //     "ReviseJan07/Demo02AutoWaitEnabledAssertions/04Attributes & Classes",
+    //   expect: {
+    //     timeout: 20000,
+    //   },
+    // },
+    // {
+    //   name: "jan08",
+    //   use: { headless: false },
+    //   testDir: "ReviseJan08/API Request",
+    // },
+    // {
+    //   name: "jan09",
+    //   use: { headless: false, navigationTimeout: 30000 },
+    //   testDir: "ReviseJan09/HandlingWindowAndPages",
+    // },
+    // {
+    //   name: "jan10",
+    //   use: { headless: false, navigationTimeout: 30000 },
+    //   testDir: "ReviseJan07/Demo02AutoWaitEnabledAssertions/04Tohavescreesnhot",
+    // },
+    // {
+    //   name: "jan12",
+    //   use: { headless: false, navigationTimeout: 30000 },
+    //   testDir: "ReviseJan12",
+    // },
+    // {
+    //   name: "jan16",
+    //   use: { headless: false, navigationTimeout: 30000 },
+    //   testDir: "ReviewJan16",
+    // },
     {
-      name: "Google Chrome",
-      use: { ...devices["Desktop Chrome"] },
-    },
-    {
-      name: "Fixtures",
-      use: { headless: false, ...devices["Desktop Chrome"] },
-      testMatch: "**/*.spec.js",
-      testDir: "RevisitDec29/fixtures",
-    },
-    {
-      name: "mocking",
-      use: { headless: false },
-      testDir: "RevisitDec29/mocking",
-      testMatch: "demo1.spec.js",
-    },
-    {
-      name: "playwrightfixture",
-      use: { headless: false },
-      testDir: "ReviseJan06",
-    },
-    {
-      name: "desccontext",
-      use: { headless: false },
-      testDir: "ReviseJan06",
-      testMatch: "**/demotest*.spec.js",
-    },
-    {
-      name: "mycus",
-      use: { headless: false },
-      testDir: "ReviseJan06",
-      testMatch: "**/access*.spec.js",
-    },
-    {
-      name: "07jan",
-      use: { headless: false },
-      testDir:
-        "ReviseJan07/Demo02AutoWaitEnabledAssertions/04Attributes & Classes",
-      expect: {
-        timeout: 20000,
-      },
-    },
-    {
-      name: "jan08",
-      use: { headless: false },
-      testDir: "ReviseJan08/API Request",
-    },
-    {
-      name: "jan09",
+      name: "jan19",
       use: { headless: false, navigationTimeout: 30000 },
-      testDir: "ReviseJan09/HandlingWindowAndPages",
-    },
-    {
-      name: "jan10",
-      use: { headless: false, navigationTimeout: 30000 },
-      testDir: "ReviseJan07/Demo02AutoWaitEnabledAssertions/04Tohavescreesnhot",
-    },
-    {
-      name: "jan12",
-      use: { headless: false, navigationTimeout: 30000 },
-      testDir: "ReviseJan12",
-    },
-    {
-      name: "jan14",
-      use: { headless: false, navigationTimeout: 30000 },
-      testDir: "ReviseJan14",
+      testDir: "ReviewJan19",
+      testMatch: "demo4Hooks.spec.js",
     },
   ],
 
